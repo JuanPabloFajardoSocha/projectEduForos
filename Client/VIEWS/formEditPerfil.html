@@ -1,0 +1,183 @@
+<div class="w-3/4 md:w-1/2 mb-8 bg-gray-800 rounded-xl border border-white mt-4 md:mt-0">
+    <form id="form_perfil">
+        <div class="flex w-full items-center justify-center mt-6 py-2">
+            <input type="file" id="input_photo_perfil" class="hidden" accept="image/*">
+            <label for="input_photo_perfil">
+                <img class="w-40 h-40 rounded-full" id="img_perfil" src=" " alt="">
+            </label>
+
+        </div>
+        <div class="flex w-full items-center justify-center mb-4 py-2">
+            <label for="input_photo_perfil"><i class="fa fa-edit text-blue-400"> Cambiar Imagen</i></label>
+        </div>
+
+        <div class="flex w-full items-center justify-center mt-6 mb-4 py-2">
+            <label class="w-20 block tracking-wide ml-0 md:ml-2 text-blue-400 text-sm mb-2" for="grid-first-name">
+                Tipo de Documento
+            </label>
+
+            <div class="w-1/4 border-b border-blue-400 m-2">
+
+                <select id="select_document_type_perfil"
+                    class="bg-gray-800 w-full  text-gray-300 leading-tight focus:outline-none">
+                    <option value="CC" selected>Cedula de Ciudadania</option>
+                    <option value="TI">Tarjeta de Identidad</option>
+                </select>
+
+            </div>
+
+            <label class="w-20 block tracking-wide ml-0 md:ml-8 text-blue-400 text-sm mb-2" for="grid-first-name">
+                No Documento
+            </label>
+
+            <div class="w-1/4 border-b border-blue-400 m-2">
+                <input id="input_document_perfil"
+                    class="appearance-none bg-transparent border-none w-full text-gray-300 leading-tight focus:outline-none"
+                    type="number" aria-label="Full name">
+            </div>
+
+        </div>
+
+        <div class="flex w-full items-center justify-center mt-6 mb-4 py-2">
+
+            <label class="w-20 block tracking-wide ml-0 md:ml-2 text-blue-400 text-sm mb-2" for="grid-first-name">
+                Nombre
+            </label>
+
+            <div class="w-1/4 border-b border-blue-400 m-2">
+                <input id="input_firtsName_perfil"
+                    class="appearance-none bg-transparent border-none w-full text-gray-300 leading-tight focus:outline-none"
+                    type="text" aria-label="Full name">
+            </div>
+
+            <label class="w-20 block tracking-wide ml-0 md:ml-8 text-blue-400 text-sm mb-2" for="grid-first-name">
+                Apellido
+            </label>
+
+            <div class="w-1/4 border-b border-blue-400 m-2">
+                <input id="input_surName_perfil"
+                    class="appearance-none bg-transparent border-none w-full text-gray-300 leading-tight focus:outline-none"
+                    type="text" aria-label="Full name">
+            </div>
+
+        </div>
+
+        <div class="flex w-full items-center justify-center mt-6 mb-4 py-2">
+
+            <label class="w-20 block tracking-wide ml-0 md:ml-2 text-blue-400 text-sm mb-2" for="grid-first-name">
+                Edad
+            </label>
+
+            <div class="w-1/4 border-b border-blue-400 m-2">
+                <input id="input_age_perfil"
+                    class="appearance-none bg-transparent border-none w-full text-gray-300 leading-tight focus:outline-none"
+                    type="number" aria-label="Full name">
+            </div>
+
+            <label class="w-20 block tracking-wide ml-0 md:ml-8 text-blue-400 text-sm mb-2" for="grid-first-name">
+                Telefono
+            </label>
+
+            <div class="w-1/4 border-b border-blue-400 m-2">
+                <input id="input_telephone_perfil"
+                    class="appearance-none bg-transparent border-none w-full text-gray-300 leading-tight focus:outline-none"
+                    type="number" aria-label="Full name">
+            </div>
+
+        </div>
+
+        <div class="flex w-full items-center justify-center mt-6 mb-4 py-2">
+
+            <label class="w-20 block tracking-wide ml-0 md:ml-2 text-blue-400 text-sm mb-2" for="grid-first-name">
+                Email Institucional
+            </label>
+
+            <div class="w-1/4 border-b border-blue-400 m-2">
+                <input id="input_email_institutional_perfil"
+                    class="appearance-none bg-transparent border-none w-full text-gray-300 leading-tight focus:outline-none"
+                    type="email" aria-label="Full name">
+            </div>
+
+            <label class="w-20 block tracking-wide ml-0 md:ml-8 text-blue-400 text-sm mb-2" for="grid-first-name">
+                Email Personal
+            </label>
+
+            <div class="w-1/4 border-b border-blue-400 m-2">
+                <input id="input_email_personal_perfil"
+                    class="appearance-none bg-transparent border-none w-full text-gray-300 leading-tight focus:outline-none"
+                    type="email" aria-label="Full name">
+            </div>
+
+        </div>
+
+        <div class="flex w-full items-center justify-center mt-6 mb-4 py-2">
+
+            <label class="w-20 block tracking-wide ml-0 md:ml-2 text-blue-400 text-sm mb-2" for="grid-first-name">
+                Profesion
+            </label>
+
+            <div class="w-1/4 border-b border-blue-400 m-2">
+                <input id="input_profession_perfil"
+                    class="appearance-none bg-transparent border-none w-full text-gray-300 leading-tight focus:outline-none"
+                    type="text" aria-label="Full name">
+            </div>
+
+            <label class="w-20 block tracking-wide ml-0 md:ml-8 text-blue-400 text-sm mb-2" for="grid-first-name">
+                Tipo de Usuario
+            </label>
+
+            <div class="w-1/4 border-b border-blue-400 m-2">
+                <select id="select_user_type_perfil"
+                    class="bg-gray-800 w-full appearance-none text-gray-300 leading-tight focus:outline-none" required>
+
+                    <option value="Administrador">Administrador</option>
+                    <option value="Profesor">Profesor</option>
+                    <option value="Estudiante">Estudiante</option>
+                </select>
+
+            </div>
+        </div>
+
+        <div id="div_password" class="flex w-full items-center justify-center mt-6 mb-4 py-2">
+
+            <label class="w-20 block tracking-wide ml-0 md:ml-2 text-blue-400 text-sm mb-2">
+                Contraseña
+            </label>
+
+            <div class="w-1/4 border-b border-blue-400 m-2">
+                <input id="input_password_perfil"
+                    class="appearance-none bg-transparent border-none w-full text-gray-300 leading-tight focus:outline-none"
+                    type="password" aria-label="Full name">
+            </div>
+
+            <label class="w-20 block tracking-wide ml-0 md:ml-8 text-blue-400 text-sm mb-2" for="grid-first-name">
+                Confirmar Contraseña
+            </label>
+
+            <div class="w-1/4 border-b border-blue-400 m-2">
+                <input id="input_password_confirmation_perfil"
+                    class="appearance-none bg-transparent border-none w-full text-gray-300 leading-tight focus:outline-none"
+                    type="password" aria-label="Full name">
+            </div>
+
+        </div>
+
+        <div class="flex w-full items-center justify-center mt-2 ">
+
+            <span id="span_info_perfil" class="w-full text-red-600 justify-center items-center flex mr-6 ml-6 ">
+
+            </span>
+        </div>
+
+        <div class="flex w-full items-center justify-center mt-6 mb-4 py-2">
+
+            <div class="w-1/4 justify-center flex ">
+                <Button id="btn_edit_perfil" type="button"
+                    class="bg-gray-700 rounded-3xl text:font-medium py-2 px-6 text-gray-200 hover:bg-blue-600 border border-blue-600 ">
+                    Enviar
+                </button>
+            </div>
+
+        </div>
+    </form>
+</div>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../Js/login.js"></script>
+</head>
+
+<body>
+
+  <div class="flex items-center justify-center min-h-screen bg-gray-700">
+    <div class="relative flex flex-col m-6 space-y-8 bg-white shadow-md rounded-md md:flex-row md:space-y-0">
+
+      <div class="flex flex-col justify-center p-6 md:p-8">
+        <span class="mb-2 text-2xl font-bold">EDUFOROS</span>
+        <div class="py-2 text-sm leading-relaxed max-w-md mx-auto">
+          <span class="font-light text-gray-400">
+            Te damos la bienvenida a EDUFOROS! Inicia sesión para disfrutar de nuestros servicios. ¡BIENVENIDO!.
+          </span>
+        </div>
+
+        <form id="form_login">
+          <span class="mb-2 text-sm">Usuario</span>
+          <div class="py-4">
+            <input class="w-full p-2 border border-gray-300 rounded-md placeholder:font-light placeholder:text-gray-500"
+              type="email" name="email" id="email" placeholder="usuario@gmail.com" required />
+          </div>
+
+          <div class="mb-2 text-sm relative">
+            <span class="mb-2 text-sm">Contraseña</span>
+            <div class="py-4 relative">
+              <input
+                class="w-full p-2 pr-8 border border-gray-300 rounded-md placeholder:font-light placeholder:text-gray-500"
+                type="password" name="password" id="password" placeholder="************" required />
+              <div class="absolute inset-y-0 right-0 pr-2 flex items-center cursor-pointer"
+                onclick="mostrarContrasena()">
+                <svg class="h-6 w-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M2 12s2.5 4 5 4 5-4 5-4m-10 0s2.5-4 5-4 5 4 5 4m-10 0h12" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <span class="mb-2 text-sm text-red-700" id="info"></span>
+
+          <div class="flex justify-between w-full py-4">
+            <div class="mr-16">
+              <a class="text-blue-800 hover:text-blue-400 text-sm" href="">¿Olvidó su Contraseña?</a>
+            </div>
+          </div>
+          <button
+            class="w-full bg-black text-white p-2 rounded-md mb-4 hover:bg-white hover:text-black hover:border hover:border-gray-300">
+            Iniciar sesión
+          </button>
+
+        </form>
+      </div>
+
+      <div class="relative">
+        <video id="contenedorVideoLogin" autoplay muted loop
+          class="w-[200px] h-[200px] md:w-[300px] md:h-full hidden rounded-r-2xl md:block object-cover">
+          <source src="../resources/videos/FondoLogin.mp4" type="video/mp4">
+          Tu navegador no soporta el elemento de video.
+        </video>
+        <div
+          class="absolute hidden bottom-6 right-1 p-4 bg-white bg-opacity-30 backdrop-blur-sm rounded-md drop-shadow-md md:block">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="cordova.js"></script>
+
+</html>
